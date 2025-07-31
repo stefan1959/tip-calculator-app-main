@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tipper__container">
+      <div class="tipper__header">
+        <img src="images/logo.svg" alt="logo splitter" />
+      </div>
+      <div class="tipper__calculator">
+        <label for="tipper__calculator-input" class="tipper-heading"
+          >Bill</label
+        >
+        <div class="tipper__calculator-input">
+          <input
+            type="text"
+            id="tipper__calculator-input"
+            pattern="[0-9\s] [13,19]"
+          />
+        </div>
+        <div class="tipper__tip">
+          <div class="tipper__tip-head">Select Tip %</div>
+          <div id="button-list" class="tipper__tip-buttons">
+            <button class="button" value="5" onclick="getTip(0)">5%</button>
+            <button class="button" value="10" onclick="getTip(1)">10%</button>
+            <button class="button" value="15" onclick="getTip(2)">15%</button>
+            <button class="button" value="25" onclick="getTip(3)">25%</button>
+            <button class="button" value="50" onclick="getTip(4)">50%</button>
+            <input
+              class="custom"
+              type="text"
+              onclick="getCustom(custom)"
+              id="custom"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div class="tipper__tip-people">
+          <div class="flex-group">
+            <label for="tipper__tip-people"> Number of People </label>
+            <div id="people-error"></div>
+          </div>
+          <div class="tipper__tip-input">
+            <input type="text" id="tipper__tip-people" placeholder="0" />
+          </div>
+        </div>
+        <div class="tipper__result">
+          <div class="tipper__result-amount">
+            <div class="tipper__result-headings">
+              <div class="result-heading">Tip Amount</div>
+              <div class="per-person">/ person</div>
+            </div>
+            <div class="tip-amount" id="tip-amount">$0.00</div>
+          </div>
+          <div class="tipper__result-total">
+            <div class="tipper__result-headings">
+              <div class="result-heading">Total</div>
+              <div class="per-person">/ person</div>
+            </div>
+            <div class="tip-amount" id="tip-total">$0.00</div>
+          </div>
+          <button onclick="reset()" class="tipper-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/stefan1959">Stephen Petersen</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --green-400: 172 67% 45%;
+
+  /* ### Neutral */
+
+  --green-900: 183 100% 15%;
+  --grey-500: 186 14% 43%;
+  --grey-400: 184 14% 56%;
+  --grey-200: 185 41% 84%;
+  --grey-50: 189 47% 97%;
+  --white: 0 100% 100%;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url(fonts/SpaceMono-Bold.ttf);
+  font-style: 700;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url(fonts/SpaceMono-Regular.ttf);
+  font-style: 400;
+}
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  font-family: "Space Mono", sans-serif;
+  background-color: hsl(var(--grey-200));
+  font-weight: 700;
+  font-size: 24px;
+}
+.tipper__container {
+  display: grid;
+  justify-items: center;
+}
+.tipper__container input:focus,
+.tipper__container input:active {
+  outline: none;
+}
+.tipper__container input:hover {
+  cursor: pointer;
+  outline: 2px solid hsl(var(--green-400));
+}
+.tipper__header {
+  padding-block: 2rem;
+}
+.tipper__calculator {
+  display: grid;
+  max-width: 375px;
+  gap: 1rem;
+  background-color: hsl(var(--white));
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.tipper-heading {
+  color: hsl(var(--green-900));
+  font-size: 0.9rem;
+}
+.tipper__calculator-input {
+  position: relative;
+}
+.tipper__calculator input {
+  border: none;
+  min-width: 95%;
+  background-color: hsl(var(--grey-50));
+  text-align: right;
+  padding: 0 1rem 0.3rem;
+}
+.tipper__calculator-input::before {
+  color: hsl(var(--grey-400));
+  position: absolute;
+  content: "$";
+  margin-top: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  left: 1rem;
+  z-index: 1;
+}
+.tipper__tip-header {
+  color: hsl(var(--green-900));
+  font-size: 0.6rem;
+  padding-bottom: 1rem;
+}
+.tipper__tip-buttons {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.button {
+  color: hsl(var(--white));
+  background-color: hsl(var(--green-900));
+  border-radius: 0.3rem;
+  border: none;
+}
+.custom {
+  color: hsl(var(--green-900));
+  background-color: hsl(var(--grey-50));
+  border: none;
+}
+.button:hover {
+  color: hsl(var(--green-900));
+  background-color: hsl(var(--grey-200));
+  cursor: pointer;
+}
+.active {
+  color: hsl(var(--green-900));
+  background-color: hsl(var(--grey-200));
+  cursor: pointer;
+}
+.tipper__tip-people {
+  display: grid;
+  gap: 0.4rem;
+  color: hsl(var(--green-900));
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.tipper__tip-input {
+  width: 100%;
+  position: relative;
+}
+.tipper__tip-input input {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+.tipper__tip-input::before {
+  --size: 14px;
+  font-size: 1.3rem;
+  content: "";
+  background-image: url(images/icon-person.svg);
+  margin-top: 0.7rem;
+  width: var(--size);
+  height: var(--size);
+  top: 0.2rem;
+  left: 1rem;
+  position: absolute;
+  z-index: 3;
+}
+.tipper__result {
+  display: grid;
+  font-size: 0.8rem;
+  gap: 1rem;
+  color: hsl(var(--white));
+  background-color: hsl(var(--green-900));
+  padding: 1rem;
+}
+.tipper__result span {
+  font-size: 0.7rem;
+}
+.tipper__result-amount,
+.tipper__result-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tipper__result-headings {
+  font-weight: 400;
+}
+.per-person {
+  font-size: 0.7rem;
+  color: hsl(var(--green-400) / 0.6);
+}
+.tip-amount {
+  color: hsl(var(--green-400));
+  font-size: 1.5rem;
+}
+.tipper-reset {
+  color: hsl(var(--green-900));
+  background-color: hsl(var(--green-400));
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-block: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+.tipper-reset:hover {
+  background-color: hsl(var(--grey-200));
+  cursor: pointer;
+}
+/* attribute style */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
