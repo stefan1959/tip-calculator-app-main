@@ -19,41 +19,43 @@
       <div class="tipper__header">
         <img src="images/logo.svg" alt="logo splitter" />
       </div>
-      <div class="tipper__calculator">
-        <label for="tipper__calculator-input" class="tipper-heading"
-          >Bill</label
-        >
-        <div class="tipper__calculator-input">
-          <input
-            type="text"
-            id="tipper__calculator-input"
-            pattern="[0-9\s] [13,19]"
-          />
-        </div>
-        <div class="tipper__tip">
-          <div class="tipper__tip-head">Select Tip %</div>
-          <div id="button-list" class="tipper__tip-buttons">
-            <button class="button" value="5" onclick="getTip(0)">5%</button>
-            <button class="button" value="10" onclick="getTip(1)">10%</button>
-            <button class="button" value="15" onclick="getTip(2)">15%</button>
-            <button class="button" value="25" onclick="getTip(3)">25%</button>
-            <button class="button" value="50" onclick="getTip(4)">50%</button>
+      <div class="bill_input">
+        <div class="tipper__calculator">
+          <label for="tipper__calculator-input" class="tipper-heading"
+            >Bill</label
+          >
+          <div class="tipper__calculator-input">
             <input
-              class="custom"
               type="text"
-              onclick="getCustom(custom)"
-              id="custom"
-              placeholder="Custom"
+              id="tipper__calculator-input"
+              pattern="[0-9\s] [13,19]"
             />
           </div>
-        </div>
-        <div class="tipper__tip-people">
-          <div class="flex-group">
-            <label for="tipper__tip-people"> Number of People </label>
-            <div id="people-error"></div>
+          <div class="tipper__tip">
+            <div class="tipper__tip-head">Select Tip %</div>
+            <div id="button-list" class="tipper__tip-buttons">
+              <button class="button" value="5" onclick="getTip(0)">5%</button>
+              <button class="button" value="10" onclick="getTip(1)">10%</button>
+              <button class="button" value="15" onclick="getTip(2)">15%</button>
+              <button class="button" value="25" onclick="getTip(3)">25%</button>
+              <button class="button" value="50" onclick="getTip(4)">50%</button>
+              <input
+                class="custom"
+                type="text"
+                onclick="getCustom(custom)"
+                id="custom"
+                placeholder="Custom"
+              />
+            </div>
           </div>
-          <div class="tipper__tip-input">
-            <input type="text" id="tipper__tip-people" placeholder="0" />
+          <div class="tipper__tip-people">
+            <div class="flex-group">
+              <label for="tipper__tip-people"> Number of People </label>
+              <div id="people-error"></div>
+            </div>
+            <div class="tipper__tip-input">
+              <input type="text" id="tipper__tip-people" placeholder="0" />
+            </div>
           </div>
         </div>
         <div class="tipper__result">
