@@ -195,6 +195,11 @@ body {
 }
 
 @media (min-width: 700px) {
+  body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+  }
   .bill_input {
     display: flex;
     flex-basis: 100%;
