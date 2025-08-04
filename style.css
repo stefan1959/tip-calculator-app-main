@@ -32,7 +32,7 @@ body {
   font-family: "Space Mono", sans-serif;
   background-color: hsl(var(--grey-200));
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .tipper__container {
   display: grid;
@@ -44,7 +44,7 @@ body {
 }
 .tipper__container input:hover {
   cursor: pointer;
-  outline: 2px solid hsl(var(--green-400));
+  outline: 0.125rem solid hsl(var(--green-400));
 }
 .tipper__header {
   padding-block: 2rem;
@@ -60,10 +60,9 @@ body {
 }
 .tipper__calculator {
   display: grid;
-  max-width: 375px;
+  max-width: 23.5rem;
   gap: 1rem;
   background-color: hsl(var(--white));
-  /* padding: 1rem; */
 }
 .tipper-heading {
   color: hsl(var(--green-900));
@@ -138,7 +137,7 @@ body {
   width: 100%;
 }
 .tipper__tip-input::before {
-  --size: 14px;
+  --size: 0.875rem;
   font-size: 1.3rem;
   content: "";
   background-image: url(images/icon-person.svg);
@@ -189,12 +188,8 @@ body {
   border: none;
   border-radius: 0.4rem;
 }
-/* .tipper-reset:hover {
-  background-color: hsl(var(--grey-200));
-  cursor: pointer;
-} */
 
-@media (min-width: 700px) {
+@media (min-width: 45rem) {
   body {
     display: grid;
     height: 100vh;
@@ -203,14 +198,14 @@ body {
   .bill_input {
     display: flex;
     flex-basis: 100%;
-    max-width: 750px;
+    max-width: 46.875rem;
   }
   .bill_input > * {
     flex: 1;
     max-width: 100%;
   }
   .tipper__result {
-    grid-template-rows: 50px 50px 1fr;
+    grid-template-rows: 3.125rem 3.125rem 1fr;
   }
   .tipper__result button {
     align-self: flex-end;
@@ -219,7 +214,7 @@ body {
 
 /* attribute style */
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
   margin-block: 2rem;
 }
