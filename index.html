@@ -21,9 +21,10 @@
       </div>
       <div class="bill_input">
         <div class="tipper__calculator">
-          <label for="tipper__calculator-input" class="tipper-heading"
-            >Bill</label
-          >
+          <div class="flex-group tipper-heading">
+            <label for="tipper__calculator-input">Bill</label>
+            <div id="bill-error"></div>
+          </div>
           <div class="tipper__calculator-input">
             <input
               type="text"
@@ -34,15 +35,14 @@
           <div class="tipper__tip">
             <div class="tipper__tip-head">Select Tip %</div>
             <div id="button-list" class="tipper__tip-buttons">
-              <button class="button" value="5" onclick="getTip(0)">5%</button>
-              <button class="button" value="10" onclick="getTip(1)">10%</button>
-              <button class="button" value="15" onclick="getTip(2)">15%</button>
-              <button class="button" value="25" onclick="getTip(3)">25%</button>
-              <button class="button" value="50" onclick="getTip(4)">50%</button>
+              <button class="button" value="5">5%</button>
+              <button class="button" value="10">10%</button>
+              <button class="button" value="15">15%</button>
+              <button class="button" value="25">25%</button>
+              <button class="button" value="50">50%</button>
               <input
                 class="custom"
                 type="text"
-                onclick="getCustom(custom)"
                 id="custom"
                 placeholder="Custom"
               />
@@ -73,7 +73,14 @@
             </div>
             <div class="tip-amount" id="tip-total">$0.00</div>
           </div>
-          <button onclick="reset()" class="tipper-reset">Reset</button>
+          <button
+            id="resetButton"
+            disabled="true"
+            onclick="reset()"
+            class="tipper-reset"
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>

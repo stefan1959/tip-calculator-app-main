@@ -181,7 +181,7 @@ body {
 }
 .tipper-reset {
   color: hsl(var(--green-900));
-  background-color: hsl(var(--green-400));
+  background-color: hsl(var(--green-400) / 0.16);
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -189,10 +189,10 @@ body {
   border: none;
   border-radius: 0.4rem;
 }
-.tipper-reset:hover {
+/* .tipper-reset:hover {
   background-color: hsl(var(--grey-200));
   cursor: pointer;
-}
+} */
 
 @media (min-width: 700px) {
   body {
