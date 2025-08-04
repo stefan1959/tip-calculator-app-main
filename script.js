@@ -105,7 +105,7 @@ function validate(e) {
   } else if (!amount.value) {
     // check a Bill amount has been entered
     errored = true;
-    billError.innerHTML = "just need Bill value!";
+    billError.innerHTML = "Bill amount can't be empty";
     billError.style.color = "red";
     return false;
   }
