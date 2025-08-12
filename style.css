@@ -114,6 +114,9 @@ body {
   background-color: hsl(var(--grey-50));
   border: none;
 }
+.custom::placeholder {
+  text-align: center;
+}
 .button:hover {
   color: hsl(var(--green-900));
   background-color: hsl(var(--grey-200));
