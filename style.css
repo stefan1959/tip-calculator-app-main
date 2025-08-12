@@ -201,12 +201,13 @@ body {
     place-content: center;
   }
   .tipper__calculator {
-    gap: 1.8rem;
+    gap: 1.7rem;
+    padding: 1.5rem;
   }
   .bill_input {
     display: flex;
     flex-basis: 100%;
-    max-width: 46.875rem;
+    max-width: 52rem;
   }
   .bill_input > * {
     flex: 1;
