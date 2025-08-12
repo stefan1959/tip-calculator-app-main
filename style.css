@@ -93,9 +93,9 @@ body {
   left: 1rem;
   z-index: 1;
 }
-.tipper__tip-header {
+.tipper__tip-head {
   color: hsl(var(--green-900));
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   padding-bottom: 1rem;
 }
 .tipper__tip-buttons {
@@ -199,6 +199,9 @@ body {
     display: grid;
     height: 100vh;
     place-content: center;
+  }
+  .tipper__calculator {
+    gap: 1.8rem;
   }
   .bill_input {
     display: flex;
